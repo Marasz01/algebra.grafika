@@ -5,6 +5,9 @@
     <title>Grafički primjer</title>
   </head>
   <body>
+    <p>Audio zapis</p>
+    <audio src="./media/audio/audio.mp3" controls></audio>
+
     <p>Naša stranica sa <ins></ins>grafičkim elementima</ins></p>
 
     <img 
@@ -92,15 +95,22 @@ xmlns="http://www.w3.org/2000/svg">
   <text x="0" y="45" style="fill:rgb(64, 9, 230);font-weight:bold;stroke:rgb(94, 6, 6);stroke-width:1">I love W3Schools.com!</text>
 </svg>
 
-
-
-
-
-
-
-
-
-
+<hr>
+<h2>Canvas</h2>
+<canvas id="myCanvas"
+width="200"
+height="100"
+style="border: 1px solid #000"
+>
+  
+</canvas>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.moveTo (0, 0);
+  ctx.lineTo (200, 100);
+  ctx.stroke();
+</script>
 
   </body>
   
